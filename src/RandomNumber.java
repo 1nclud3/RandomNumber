@@ -39,7 +39,13 @@ public class RandomNumber {
                 System.out.println("Not a perfect number.");
             System.out.print("Binary form: ");
             DecToBin(n);
+            System.out.println();
+            System.out.println("Square root of " + n + " = " + Math.sqrt(n));
         }
+        else
+            System.out.println("Not a positive number, properties as dividers, factorial and many others are unavailable.");
+            System.out.println(n + "^2 = " + n*n);
+            System.out.println(n + "^3 = " + n*n*n);
     }
     void PrintArray(int[] arr){
         for (int j : arr) System.out.print(j + "   ");
