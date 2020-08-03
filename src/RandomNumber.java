@@ -44,8 +44,8 @@ public class RandomNumber {
         }
         else
             System.out.println("Not a positive number, properties as dividers, factorial and many others are unavailable.");
-            System.out.println(n + "^2 = " + n*n);
-            System.out.println(n + "^3 = " + n*n*n);
+        System.out.println(n + "^2 = " + n*n);
+        System.out.println(n + "^3 = " + n*n*n);
     }
     void PrintArray(int[] arr){
         for (int j : arr) System.out.print(j + "   ");
