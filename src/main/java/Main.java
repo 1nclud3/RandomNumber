@@ -4,13 +4,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         while (true) {
-            Random r = new Random();
-            int number = r.nextInt(201) - 100;
+            Random random = new Random();
+            int number = random.nextInt(201) - 100;
             System.out.println("This program draws random integer number between -100 and 100.");
             System.out.println("Yor number is: " + number);
             Properties properties = new Properties(number);
-            properties.setProperties();
-            properties.printProperties();
+            Properties.printProperties(properties);
             System.out.println("Draw next number? (y/n)");
             Scanner input = new Scanner(System.in);
             String userDecision = input.nextLine();
